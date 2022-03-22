@@ -157,7 +157,7 @@ def runner():
                                opacity=0.7,
                                title="Calgary's Air Quality By Sector Using Air Quality Index (AQI)")
     fig.update_geos(fitbounds='locations')
-    fig.write_json("output/aiq_map.json")
+    fig.write_json("input/aiq_map.json")
 
 
 if __name__ == '__main__':
