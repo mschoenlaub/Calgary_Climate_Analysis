@@ -29,7 +29,7 @@ jobs:
       - name: Install dependencies
         run: |
           poetry config virtualenvs.in-project true --local
-          poetry install
+          poetry install --no-dev
       - run: poetry run python ./AQScripts.py
       - run:  generate-md --layout layout
       - uses: peaceiris/actions-gh-pages@v3
