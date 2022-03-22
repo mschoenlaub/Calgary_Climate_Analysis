@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: poetry install
       - name: Execute script
-        run: poetry run ./AQScripts.py
+        run: poetry run python ./AQScripts.py
       - run:  generate-md --layout layout
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
