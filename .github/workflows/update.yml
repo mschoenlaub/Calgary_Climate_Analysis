@@ -18,6 +18,8 @@ jobs:
           node-version: "14"
       - run: npm install -g markdown-styles
       - uses: actions/setup-python@v2
+        with:
+          python-version: "3.10"
       - uses: abatilo/actions-poetry@v2.0.0
       - name: Install dependencies
         run: poetry install
